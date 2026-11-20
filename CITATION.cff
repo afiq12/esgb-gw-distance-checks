@@ -8,7 +8,15 @@ authors:
     orcid: "https://orcid.org/0000-0002-8698-9459"
     affiliation: "Physics, Program Studi Pendidikan Fisika, Universitas Sulawesi Barat, Majene, West Sulawesi, Indonesia"
 version: "1.0.0"
-date-released: "2026-11-21"
+doi: "10.5281/zenodo.24403951"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24403951"
+    description: "Concept DOI, all versions"
+  - type: doi
+    value: "10.5281/zenodo.24403952"
+    description: "Version 1.0.0"
+date-released: "2026-11-20"
 license: MIT
 repository-code: "https://github.com/afiq12/esgb-gw-distance-checks"
 keywords:
