@@ -1,5 +1,7 @@
 # esgb-gw-distance-checks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24403951.svg)](https://doi.org/10.5281/zenodo.24403951)
+
 Symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet (EsGB) cosmology.
 
 This repository holds verification scripts and derivation notes. It is not a research article: it documents that a set of known and derived relations has been checked independently, so that later work can build on them.
@@ -51,7 +53,9 @@ expected_output.txt
 
 ## Citation
 
-See `CITATION.cff`. The Zenodo DOI is added after the first release.
+Agung, A. (2026). *esgb-gw-distance-checks: symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet cosmology* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24403952
+
+To cite all versions, use the concept DOI https://doi.org/10.5281/zenodo.24403951. See also `CITATION.cff`.
 
 ## Licence
 
