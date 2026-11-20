@@ -1,0 +1,40 @@
+== check_background_and_horndeski_map.py
+sqrt(-g) G - d/dt(8 adot^3/N^3) = 0
+Hamiltonian constraint / a^3 = 24*H**3*Derivative(f(t), t) + 3*H**2 - rho_m - V(phi(t)) - Derivative(phi(t), t)**2/2  = 0
+G_T = 8*H*f1*phidot + 1   (= 1 + 8 H fdot, fdot = f1 phidot)
+F_T = 8*f1*phiddot + 8*f2*phidot**2 + 1   (= 1 + 8 fddot, fddot = f2 phidot^2 + f1 phiddot)
+== check_distance_ratio_numerical.py
+ beta   z_e   numerical  analytic   relative difference
+  0.1  0.30  1.004727  1.004725  1.6e-06
+  0.1  0.67  1.006114  1.006093  2.2e-05
+  0.1  1.50  1.003300  1.003269  3.1e-05
+  0.1  3.00  0.994812  0.994803  9.5e-06
+  0.3  0.30  1.012132  1.012128  4.2e-06
+  0.3  0.67  1.015743  1.015687  5.5e-05
+  0.3  1.50  1.008441  1.008361  7.9e-05
+  0.3  3.00  0.986987  0.986963  2.4e-05
+  0.6  0.30  1.019943  1.019936  6.7e-06
+  0.6  0.67  1.025966  1.025875  8.9e-05
+  0.6  1.50  1.013824  1.013694  1.3e-04
+  0.6  3.00  0.979107  0.979069  3.9e-05
+== check_tensor_action.py
+background G check (must be 0): 0
+remainder (must be 0): 0
+A/(a^3 G_T) = -1/2
+B - d/dt(A) = 0
+C/(a F_T)   = 1/2
+c_T^2 - 1 on fdot = c a : 0
+G_T on fdot = c a       : 8*c*Derivative(a(t), t) + 1
+== fit_standard_templates.py
+--- range 0 < z < 1.0
+ beta=0.1: max anomaly 0.61% | (Xi0,n)=(1.0063,5.16) max residual 0.07% | c_M=+0.032 max residual 0.17%
+ beta=0.3: max anomaly 1.57% | (Xi0,n)=(1.0163,5.12) max residual 0.17% | c_M=+0.081 max residual 0.44%
+ beta=0.6: max anomaly 2.59% | (Xi0,n)=(1.0269,5.07) max residual 0.29% | c_M=+0.133 max residual 0.72%
+--- range 0 < z < 2.0
+ beta=0.1: max anomaly 0.61% | (Xi0,n)=(1.0042,11.92) max residual 0.37% | c_M=+0.018 max residual 0.43%
+ beta=0.3: max anomaly 1.57% | (Xi0,n)=(1.0109,11.88) max residual 0.96% | c_M=+0.046 max residual 1.10%
+ beta=0.6: max anomaly 2.59% | (Xi0,n)=(1.0179,11.84) max residual 1.58% | c_M=+0.075 max residual 1.80%
+--- range 0 < z < 3.0
+ beta=0.1: max anomaly 0.61% | (Xi0,n)=(1.0019,20.00) max residual 0.71% | c_M=+0.006 max residual 0.68%
+ beta=0.3: max anomaly 1.57% | (Xi0,n)=(1.0050,20.00) max residual 1.80% | c_M=+0.015 max residual 1.71%
+ beta=0.6: max anomaly 2.59% | (Xi0,n)=(1.0082,20.00) max residual 2.92% | c_M=+0.025 max residual 2.78%

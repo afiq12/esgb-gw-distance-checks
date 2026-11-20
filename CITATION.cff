@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these scripts or notes, please cite them as below."
+title: "esgb-gw-distance-checks: symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet cosmology"
+type: software
+authors:
+  - family-names: Agung
+    given-names: Afiq
+    orcid: "https://orcid.org/0000-0002-8698-9459"
+    affiliation: "Physics, Program Studi Pendidikan Fisika, Universitas Sulawesi Barat, Majene, West Sulawesi, Indonesia"
+version: "1.0.0"
+date-released: "2026-11-21"
+license: MIT
+repository-code: "https://github.com/afiq12/esgb-gw-distance-checks"
+keywords:
+  - Einstein-scalar-Gauss-Bonnet gravity
+  - gravitational-wave luminosity distance
+  - standard sirens
+  - modified gravity
+  - symbolic computation
