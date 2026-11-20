@@ -1,0 +1,30 @@
+{
+  "title": "esgb-gw-distance-checks: symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet cosmology",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Verification scripts and derivation notes for the tensor sector of Einstein-scalar-Gauss-Bonnet (EsGB) cosmology on the luminal branch (c_T = 1). The scripts check symbolically, in two independent ways, the quadratic tensor action (G_T = 1 + 8 H df/dt, F_T = 1 + 8 d2f/dt2) and the Hamiltonian constraint 3 H^2 (1 + 8 H df/dt) = rho_tot, and check numerically the distance ratio d_GW/d_EM = sqrt(G_T(0)/G_T(z)) by integrating the wave equation. A further script quantifies how well the standard (Xi_0, n) and c_M templates reproduce that ratio.</p><p>This record is a set of checks, not a research article. The distance ratio on the luminal branch is the result of Linder (arXiv:2108.11526), and the EsGB tensor sector with c_T = 1 is also analysed by Fier et al. (arXiv:2503.01975); the scripts reproduce those relations independently. Numerical work uses a LambdaCDM background as a test approximation. The derivation notes are written in Indonesian.</p>",
+  "creators": [
+    {
+      "name": "Agung, Afiq",
+      "affiliation": "Physics, Program Studi Pendidikan Fisika, Universitas Sulawesi Barat, Majene, West Sulawesi, Indonesia",
+      "orcid": "0000-0002-8698-9459"
+    }
+  ],
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "Einstein-scalar-Gauss-Bonnet gravity",
+    "gravitational-wave luminosity distance",
+    "standard sirens",
+    "modified gravity",
+    "Horndeski theory",
+    "symbolic computation",
+    "SymPy"
+  ],
+  "related_identifiers": [
+    {"identifier": "arXiv:2108.11526", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "arXiv:2503.01975", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "arXiv:2609.04112", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "10.1143/PTP.126.511", "relation": "references", "scheme": "doi"}
+  ]
+}
