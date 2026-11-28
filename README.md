@@ -27,11 +27,19 @@ The distance ratio on the luminal branch is the result of Linder (arXiv:2108.115
 - With `beta > 0` the ratio is above unity for `z < 2.09` and peaks at the deceleration to acceleration transition (`z ≈ 0.67` for `Omega_m = 0.3`), where the anomaly is about `0.066 beta`.
 - For `z < 1` the `(Xi_0, n)` template reproduces the ratio to better than 0.3 percent, and the `c_M` template to better than 0.75 percent. When the fit is extended to `z = 2` or `3` the residuals become comparable to the signal.
 
+## Preliminary estimates (added in version 1.1.0)
+
+Two further scripts give order-of-magnitude estimates. They are estimates under stated assumptions, not a data analysis.
+
+- `estimate_bbn_ceiling.py`: on the luminal branch `G_T = 1 + beta a H / H_0` holds for any scalar potential and the Hamiltonian constraint is `3 H^2 G_T = rho_tot`. If the scalar energy is subdominant at nucleosynthesis, the literature value `N_nu = 2.898 +/- 0.141` (Yeh, Shelton, Olive and Fields, JCAP 10 (2022) 046) gives `G_T - 1 <= 0.067` at two sigma, hence `beta <= 1.3e-9` to `1.6e-8` and a maximum distance anomaly between `9e-11` and `1e-9`, depending on the reference temperature (1 MeV or 0.1 MeV).
+- `estimate_et_separation.py`: a one-parameter Fisher estimate with a simple Einstein Telescope error model. The non-minimal coupling template of Lagos and Wolf (`Xi_0 = 0.88`, `n = 3.2`) is separated from general relativity at two sigma with 7 sirens if the background cosmology is known and 86 if `H_0` is left free. The luminal Gauss-Bonnet ratio needs `0.09/amp^2` to `1.2/amp^2` sirens, which is more than `1e16` at the nucleosynthesis ceiling.
+
 ## Limitations
 
 - All numerical work uses a LambdaCDM background as a test approximation, not a self-consistent EsGB background.
 - The stability conditions of the scalar sector are not derived here.
-- The order-of-magnitude bounds in the notes use assumed tolerances and are not the result of a data analysis.
+- The nucleosynthesis estimate assumes a subdominant scalar energy and a Gaussian error on `N_nu`, and maps a time-dependent rescaling of `H` onto a constant one. The recombination bound uses an assumed tolerance.
+- The siren estimate ignores selection effects, population uncertainties and peculiar velocities, and varies one parameter only.
 
 ## How to run
 
@@ -45,7 +53,7 @@ The output should match `expected_output.txt`. The numerical check takes about t
 ## Contents
 
 ```
-scripts/     five Python scripts (four checks and one figure)
+scripts/     seven Python scripts (four checks, two estimates and one figure)
 notes/       derivation notes (PDF and LaTeX source, in Indonesian)
 figures/     ratio_gb_vs_nmc.png
 expected_output.txt
@@ -53,7 +61,7 @@ expected_output.txt
 
 ## Citation
 
-Agung, A. (2026). *esgb-gw-distance-checks: symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet cosmology* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24403952
+Agung, A. (2026). *esgb-gw-distance-checks: symbolic and numerical checks of the gravitational-wave luminosity distance on the luminal branch of Einstein-scalar-Gauss-Bonnet cosmology* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24403951
 
 To cite all versions, use the concept DOI https://doi.org/10.5281/zenodo.24403951. See also `CITATION.cff`.
 

@@ -38,3 +38,19 @@ G_T on fdot = c a       : 8*c*Derivative(a(t), t) + 1
  beta=0.1: max anomaly 0.61% | (Xi0,n)=(1.0019,20.00) max residual 0.71% | c_M=+0.006 max residual 0.68%
  beta=0.3: max anomaly 1.57% | (Xi0,n)=(1.0050,20.00) max residual 1.80% | c_M=+0.015 max residual 1.71%
  beta=0.6: max anomaly 2.59% | (Xi0,n)=(1.0082,20.00) max residual 2.92% | c_M=+0.025 max residual 2.78%
+== estimate_bbn_ceiling.py
+small-beta anomaly: max(d_GW/d_EM - 1) = 0.0664 * beta at z = 0.671
+BBN: N_nu >= 2.616 (2 sigma)  ->  H^2/H^2_std >= 0.9375  ->  G_T - 1 <= 0.0667
+  T = 1.0 MeV: aH/H0 = 5.199e+07   beta <= 1.28e-09   max anomaly <= 8.52e-11
+  T = 0.1 MeV: aH/H0 = 4.072e+06   beta <= 1.64e-08   max anomaly <= 1.09e-09
+recombination (assumed tolerance 0.05): aH/H0 = 20.9   beta <= 2.39e-03   max anomaly <= 1.59e-04
+recombination (assumed tolerance 0.02): aH/H0 = 20.9   beta <= 9.57e-04   max anomaly <= 6.36e-05
+== estimate_et_separation.py
+model                    N(2s) N(3s) N(5s)  [cosmology known]   N(2s) N(3s) N(5s)  [H0 free]
+non-minimal Xi0=0.88 n=3.2        7       15       41            86      194      539
+Gauss-Bonnet beta=0.3           386      869     2414          4844    10899    30274
+Gauss-Bonnet beta=0.1          2531     5694    15816         32004    72010   200027
+Gauss-Bonnet beta=0.03        24833    55873   155204        315222   709250  1970138
+Gauss-Bonnet, small amplitude: N(2 sigma) = 0.093/amp^2 (cosmology known), 1.185/amp^2 (H0 free)
+  BBN ceiling, T=0.1 MeV: amp = 1.09e-09  ->  N(2 sigma) between 7.8e+16 and 1.0e+18
+  recombination, assumed 5% tolerance: amp = 1.59e-04  ->  N(2 sigma) between 3.7e+06 and 4.7e+07
