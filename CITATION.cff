@@ -13,6 +13,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.24403951"
     description: "Concept DOI, all versions"
+  - type: doi
+    value: "10.5281/zenodo.24615937"
+    description: "Version 1.1.0"
 date-released: "2026-11-28"
 license: MIT
 repository-code: "https://github.com/afiq12/esgb-gw-distance-checks"
